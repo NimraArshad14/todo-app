@@ -13,7 +13,7 @@ fun addTask(tasks: MutableList<Task>, nextId: Int) {
     val title = readLine()!!
     print("Enter task description: ")
     val description = readLine()!!
-         if(title.isNotEmpty() or description.isNotEmpty()) {
+         if(title.isNotEmpty() or description.isNotEmpty() ) {
         tasks.add(Task(nextId, title, description, false))
         println("Task Added") } else
              println("Task not Added")
